@@ -1,8 +1,14 @@
 ---
 title: Nigeria
-slug: luxury-apartment-london
-description: A development of 122 apartments across 14-storeys, offering
-  excellent facilities.
+slug: luxury-apartment-nigeria
+description: >-
+  <!--StartFragment-->
+
+
+  A development of 122 apartments across 14-storeys, offering excellent facilities.
+
+
+  <!--EndFragment-->
 location: Bourdillion
 category: East Anglia
 priceFrom: £408,000
