@@ -1,6 +1,6 @@
 ---
 title: Lekki
-slug: Hello
+slug: Hello-lekki-phase1
 priceFrom: £965,000
 priceIcon: fa-solid fa-tags
 yield: 10%
