@@ -1,22 +1,23 @@
 ---
 title: Nigeria
-slug: luxury-apartment-nigeria
+slug: luxury-apartment-london
 description: >-
   <!--StartFragment-->
 
 
-  A development of 122 apartments across 14-storeys, offering excellent facilities.
+  A rural community of 46 homes in the Suffolk village of Great Cornard, close to the picturesque market town Sudbury. Designed to be forever homes
 
 
   <!--EndFragment-->
-location: Bourdillion
-category: East Anglia
-priceFrom: £408,000
-yield: Up to 5.9% Yield
-deposit: 10% Deposit Now
-completionDate: "Complete: Q1 2028"
-tenure: " 999 Year Leasehold"
-totalUnits: 122 Units
+location: Phase 1
+category: Hello
+priceFrom: 20k
+yield: 5%
+deposit: 10%
+completionDate: Q2
+tenure: 999 years
+totalUnits: "122"
+icon: fa-tag
 featured: true
 mainImage: /static/uploads/mission.png
 ---
