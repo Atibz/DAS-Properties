@@ -392,7 +392,12 @@
       {% if prop.data.mainImage %}
         <img class="card-img" src="{{ prop.data.mainImage }}" alt="{{ prop.data.title }}">
       {% endif %}
-      <h2>{{ prop.data.title }}</h2>
+      <h2>
+        {% if prop.data.icon %}
+          <i class="fas {{ prop.data.icon }} icon"></i>
+        {% endif %}
+        {{ prop.data.title }}
+      </h2>
       {% if prop.data.priceFrom %}
         <p><strong>Price From:</strong> {{ prop.data.priceFrom }}</p>
       {% endif %}
