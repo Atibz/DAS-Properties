@@ -69,87 +69,60 @@ collections:
         }
       - { label: 'Active', name: 'active', widget: 'boolean', default: true }
 
-  # ✅ Properties
   - name: 'properties'
     label: 'Properties'
     folder: 'src/properties'
     create: true
     slug: '{{title}}'
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - {
-          label: 'Slug',
-          name: 'slug',
-          widget: 'string',
-          hint: 'Unique URL ID (e.g. luxury-apartment-london)',
-        }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
-      - { label: 'Location', name: 'location', widget: 'string' }
-      - {
-          label: 'Category',
-          name: 'category',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: 'Price From',
-          name: 'priceFrom',
-          widget: 'string',
-          required: false,
-        }
-      - { label: 'Yield', name: 'yield', widget: 'string', required: false }
-      - { label: 'Deposit', name: 'deposit', widget: 'string', required: false }
-      - {
-          label: 'Completion Date',
-          name: 'completionDate',
-          widget: 'string',
-          required: false,
-        }
-      - { label: 'Tenure', name: 'tenure', widget: 'string', required: false }
-      - {
-          label: 'Total Units',
-          name: 'totalUnits',
-          widget: 'string',
-          required: false,
-        }
-      - {
-          label: 'Icon',
-          name: 'icon',
-          widget: 'select',
-          options:
-            - label: 'Tag'
-              value: 'fa-tag'
-            - label: 'Chart Line'
-              value: 'fa-chart-line'
-            - label: 'Hourglass'
-              value: 'fa-hourglass'
-            - label: 'Money Bill Wave'
-              value: 'fa-money-bill-wave'
-          required: false
-          hint: 'Choose an icon for this property'
-        }
-      - {
-          label: 'Featured Property',
-          name: 'featured',
-          widget: 'boolean',
-          default: false,
-          hint: 'Check to show on homepage',
-        }
-      - { label: 'Main Image', name: 'mainImage', widget: 'image' }
-      - {
-          label: 'Gallery',
-          name: 'gallery',
-          widget: 'list',
-          field: { label: 'Image', name: 'image', widget: 'image' },
-          required: false,
-        }
-      - {
-          label: 'Map Location (Embed Code)',
-          name: 'mapLocation',
-          widget: 'text',
-          required: false,
-          hint: 'Embed code for Google Maps',
-        }
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { 
+        label: 'Slug',
+        name: 'slug',
+        widget: 'string',
+        hint: 'Unique URL ID (e.g. luxury-apartment-london)' 
+      }
+    - { label: 'Description', name: 'description', widget: 'markdown' }
+    - { label: 'Location', name: 'location', widget: 'string' }
+    - { label: 'Category', name: 'category', widget: 'string', required: false }
+    - { label: 'Price From', name: 'priceFrom', widget: 'string', required: false }
+    - { label: 'Yield', name: 'yield', widget: 'string', required: false }
+    - { label: 'Deposit', name: 'deposit', widget: 'string', required: false }
+    - { label: 'Completion Date', name: 'completionDate', widget: 'string', required: false }
+    - { label: 'Tenure', name: 'tenure', widget: 'string', required: false }
+    - { label: 'Total Units', name: 'totalUnits', widget: 'string', required: false }
+    - label: 'Icon'
+      name: 'icon'
+      widget: 'select'
+      required: false
+      hint: 'Choose an icon for this property'
+      options:
+        - { label: 'Tag', value: 'fa-tag' }
+        - { label: 'Chart Line', value: 'fa-chart-line' }
+        - { label: 'Hourglass', value: 'fa-hourglass' }
+        - { label: 'Money Bill Wave', value: 'fa-money-bill-wave' }
+    - {
+        label: 'Featured Property',
+        name: 'featured',
+        widget: 'boolean',
+        default: false,
+        hint: 'Check to show on homepage'
+      }
+    - { label: 'Main Image', name: 'mainImage', widget: 'image' }
+    - label: 'Gallery'
+      name: 'gallery'
+      widget: 'list'
+      field:
+        { label: 'Image', name: 'image', widget: 'image' }
+      required: false
+    - {
+        label: 'Map Location (Embed Code)',
+        name: 'mapLocation',
+        widget: 'text',
+        required: false,
+        hint: 'Embed code for Google Maps'
+      }
+
 
   # ✅ Pages
   - name: 'pages'
