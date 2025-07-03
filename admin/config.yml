@@ -117,12 +117,16 @@ collections:
           name: 'icon',
           widget: 'select',
           options:
-            - { label: 'Tag', value: 'fa-tag' }
-            - { label: 'Chart Line', value: 'fa-chart-line' }
-            - { label: 'Hourglass', value: 'fa-hourglass' }
-            - { label: 'Money Bill Wave', value: 'fa-money-bill-wave' }
-          required: false,
-          hint: 'Choose an icon for this property',
+            - label: 'Tag'
+              value: 'fa-tag'
+            - label: 'Chart Line'
+              value: 'fa-chart-line'
+            - label: 'Hourglass'
+              value: 'fa-hourglass'
+            - label: 'Money Bill Wave'
+              value: 'fa-money-bill-wave'
+          required: false
+          hint: 'Choose an icon for this property'
         }
       - {
           label: 'Featured Property',
