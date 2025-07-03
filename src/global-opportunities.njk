@@ -342,85 +342,66 @@
 <h1>THAILAND</h1>
 </div>
 
+
 <div class="card-container">
-    <div class="card">
-      <img class="card-img" src="/static/assets/Thailand/Bang-Tao/Bang Tao1.png" alt="">
-        <h2>Nebu Resort, Bang Tao</h2>
-       
-        <div class="overview-highlight">
-<div class="overview-highlight-1">
-<p><i class="fas fa-tag icon"></i> <strong>Price From $123,000</strong></p>
+  {% for prop in collections.properties %}
+  <div class="card">
+    {% if prop.data.mainImage %}
+    <img class="card-img" src="{{ prop.data.mainImage }}" alt="{{ prop.data.title }}">
+    {% endif %}
 
-</div>
-<div class="overview-highlight-2">
-<p><i class="fas fa-chart-line icon"></i> <strong>Up to 15% Rental Yield</strong></p>
-</div>
-        </div>
-        <p class="card-p"></p>
- <a href="/thailand-bang-tao/" class="card-btn">Learn More</a>
+    <h2>{{ prop.data.title }}</h2>
+
+    <div class="overview-highlight">
+      <div class="overview-highlight-1">
+        {% if prop.data.priceFrom %}
+        <p>
+          {% if prop.data.priceIcon %}
+          <i class="{{ prop.data.priceIcon }} icon"></i>
+          {% endif %}
+          <strong>Price From {{ prop.data.priceFrom }}</strong>
+        </p>
+        {% endif %}
+
+        {% if prop.data.completionDate %}
+        <p>
+          {% if prop.data.completionIcon %}
+          <i class="{{ prop.data.completionIcon }} icon"></i>
+          {% endif %}
+          <strong>Complete: {{ prop.data.completionDate }}</strong>
+        </p>
+        {% endif %}
+      </div>
+
+      <div class="overview-highlight-2">
+        {% if prop.data.deposit %}
+        <p>
+          {% if prop.data.depositIcon %}
+          <i class="{{ prop.data.depositIcon }} icon"></i>
+          {% endif %}
+          <strong>{{ prop.data.deposit }} Deposit Now</strong>
+        </p>
+        {% endif %}
+
+        {% if prop.data.yield %}
+        <p>
+          {% if prop.data.yieldIcon %}
+          <i class="{{ prop.data.yieldIcon }} icon"></i>
+          {% endif %}
+          <strong>{{ prop.data.yield }} Yield</strong>
+        </p>
+        {% endif %}
+      </div>
     </div>
 
-    <div class="card">
-      <img class="card-img" src="/static/assets/Thailand/Jomtien/Jomtien6.png" alt="">
-        <h2>Nebu Resort, Jomtien</h2>
-       
-        <div class="overview-highlight">
-<div class="overview-highlight-1">
-<p><i class="fas fa-tag icon"></i> <strong>Price From $88,500</strong></p>
+    {% if prop.data.description %}
+    <p class="card-p">{{ prop.data.description }}</p>
+    {% endif %}
+
+    <a href="/{{ prop.fileSlug }}/" class="card-btn">Learn More</a>
+  </div>
+  {% endfor %}
 </div>
-<div class="overview-highlight-2">
-  <p><i class="fas fa-chart-line icon"></i> <strong>9% to 15% Rental Yield</strong></p>
-</div>
-        </div>
-        <p class="card-p">6 luxurious Hotels with a total of 950 rooms</p>
-  <a href="/thailand-jomtien/" class="card-btn">Learn More</a>
-    </div>
-    </div>
-
-
-    
-
-    <div class="global-header">
-  <h2>More Opportunities</h2>
-</div>
-
-
-
-{% if prop.data.priceFrom %}
-  <p>
-    {% if prop.data.priceIcon %}
-      <i class="{{ prop.data.priceIcon }}"></i>
-    {% endif %}
-    <strong>Price From:</strong> {{ prop.data.priceFrom }}
-  </p>
-{% endif %}
-
-{% if prop.data.yield %}
-  <p>
-    {% if prop.data.yieldIcon %}
-      <i class="{{ prop.data.yieldIcon }}"></i>
-    {% endif %}
-    <strong>Yield:</strong> {{ prop.data.yield }}
-  </p>
-{% endif %}
-
-{% if prop.data.completionDate %}
-  <p>
-    {% if prop.data.completionIcon %}
-      <i class="{{ prop.data.completionIcon }}"></i>
-    {% endif %}
-    <strong>Completion:</strong> {{ prop.data.completionDate }}
-  </p>
-{% endif %}
-
-{% if prop.data.deposit %}
-  <p>
-    {% if prop.data.depositIcon %}
-      <i class="{{ prop.data.depositIcon }}"></i>
-    {% endif %}
-    <strong>Deposit:</strong> {{ prop.data.deposit }}
-  </p>
-{% endif %}
 
 
   <!-- Interest Form -->
