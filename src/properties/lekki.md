@@ -1,6 +1,6 @@
 ---
 title: Lekki
-slug: Hello-lekki-phase1
+slug: luxury-apartment-london
 priceFrom: £965,000
 priceIcon: fa-solid fa-tags
 yield: 10%
