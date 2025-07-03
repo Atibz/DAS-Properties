@@ -1,6 +1,11 @@
 ---
 title: Lekki
 slug: Hello
+priceFrom: £965,000
+yield: 10%
+yieldIcon: fa-solid fa-chart-line
+completionDate: Q2
+deposit: 15%
 description: >-
   <!--StartFragment-->
 
@@ -11,10 +16,6 @@ description: >-
   <!--EndFragment-->
 location: Phase 1
 category: Manchester
-priceFrom: £965,000
-yield: 10%
-deposit: 15%
-completionDate: Q2
 tenure: "999"
 totalUnits: "25"
 featured: true
